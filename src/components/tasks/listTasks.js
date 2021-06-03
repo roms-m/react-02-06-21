@@ -14,7 +14,7 @@ function ListTasks({ tasks }) {
         </thead>
         <tbody>
           {tasks.map(task => (
-            <Task task={task} />
+            <Task key={task.id} task={task} />
           ))}
         </tbody>
       </table>
